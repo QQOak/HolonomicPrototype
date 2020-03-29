@@ -6,24 +6,20 @@ namespace HolonomicPrototype
 {
     public class Wheel
     {
-        public Wheel(int driveAngle, int freeRunningAngle, int diameter) : this (driveAngle, freeRunningAngle, diameter, 0)
+        public Wheel(int freeRunningAngle, int diameter)
         {
-        }
-
-        public Wheel(int driveAngle, int freeRunningAngle, int diameter, int distanceFromCentre)
-        {
-            DriveAngle = driveAngle;
             FreeRunningAngle = freeRunningAngle;
             Diameter = diameter;
-            DistanceFromCentre = distanceFromCentre;
         }
 
-        public int DriveAngle { get; set; }
-
+        /// <summary>
+        /// The angle on the wheels of the free spinning rollers.  90 for Omniwheels, 45 or 315 for meccanum
+        /// </summary>
         public int FreeRunningAngle { get; set; }
 
+        /// <summary>
+        /// Diameter of the wheel
+        /// </summary>
         public int Diameter { get; set; }
-
-        public int DistanceFromCentre { get; set; } = 0;
     }
 }

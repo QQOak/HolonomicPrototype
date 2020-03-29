@@ -10,14 +10,10 @@ namespace HolonomicPrototype.Tests
     public class DriveTrainHelperTests
     {
         [TestMethod]
-        public void GetVectorFromJoyStickXY()
+        public void AddingWheel_IncreasesWheelCount()
         {
 
         }
 
-        public void GetMagnitudeFromJoystickXY()
-        {
-
-        }
     }
 }
